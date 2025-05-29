@@ -26,11 +26,12 @@ weather-data-pipeline/
 
 ### Setup
 
-1. Clone the repo:
-   git clone https://github.com/uncagedspirit/weather-data-pipeline.git
-   cd weather-data-pipeline
+1. Clone the repo: <br/>
+   `git clone https://github.com/uncagedspirit/weather-data-pipeline.git` <br/>
+   `cd weather-data-pipeline`
 
 2. Create a .env file in the root folder with:
+   ```
    API_KEY=your_openweathermap_api_key
    CITY=Pune
    DB_NAME=weather_db
@@ -38,14 +39,15 @@ weather-data-pipeline/
    DB_PASSWORD=your_db_password
    DB_HOST=localhost
    DB_PORT=5432
+   ```
 
-3. Install dependencies:
-   pip install -r requirements.txt
+3. Install dependencies: <br/>
+   `pip install -r requirements.txt`
 
-4. Set up PostgreSQL:
+4. Set up PostgreSQL: <br/>
    - Create weather_db database.
-   - Run schema.sql to create the weather table.
+   - Run `schema.sql` to create the weather table.
 
-5. Run the script:
-   python weather_pipeline.py
+5. Run the script:<br/>
+   `python weather_pipeline.py`
 
